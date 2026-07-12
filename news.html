@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>News — Mufuni House Chihov</title>
+<meta name="description" content="Dog shows, new titles, litters and new family members at Mufuni House Chihov chihuahua kennel.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="page">
+
+  <nav class="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__brand">
+        <img src="images/logo.png" alt="Mufuni House Chihov" class="nav__logo">
+        <span>
+          <span class="nav__title">Mufuni House Chihov</span>
+          <span class="nav__subtitle">CHIHUAHUA KENNEL · EST. 2001</span>
+        </span>
+      </a>
+      <button class="nav__toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <div class="nav__links">
+        <a href="index.html">Home</a>
+        <a href="our-dogs.html">Our Dogs</a>
+        <a href="news.html" class="active">News</a>
+        <a href="for-sale.html">For Sale</a>
+        <a href="veterans.html">Veterans</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+      <div class="nav__lang">
+        <span class="nav__lang-active">EN</span>
+        <span class="nav__lang-inactive">RU</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="container--narrow" style="padding-top:52px;padding-bottom:12px">
+    <div class="eyebrow">KENNEL LIFE</div>
+    <h1 class="heading-lg" style="margin-top:6px">News</h1>
+    <p style="font-size:16px;max-width:560px;margin-top:10px">Dog shows, new titles, litters and new family members — newest first.</p>
+    <div class="filters" id="news-filters">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="shows">Shows</button>
+      <button class="filter" data-filter="puppies">Puppies</button>
+      <button class="filter" data-filter="new-dogs">New dogs</button>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section class="container--narrow" style="padding-top:28px;padding-bottom:60px">
+    <div style="display:flex;flex-direction:column;gap:20px" id="news-timeline">
+
+      <div class="news-entry" style="display:grid;grid-template-columns:120px 1fr;gap:24px" data-category="puppies">
+        <div style="font-size:13px;font-weight:800;color:#A08A54;padding-top:26px;text-align:right">12 JUN 2026</div>
+        <div class="news-card-with-img" style="background:#FFFEF9;border:1px solid #E5DCC6;border-radius:14px;padding:22px 26px;display:grid;grid-template-columns:1fr 180px;gap:22px;align-items:center">
+          <div>
+            <span class="tag tag--puppies">PUPPIES</span>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:#3F4A2E;margin-top:10px">New litter born</div>
+            <div style="font-size:14.5px;line-height:1.65;color:#6B6A55;margin-top:6px">Three long-haired puppies arrived — two girls and a boy. All doing wonderfully with mum. Reservations open soon.</div>
+          </div>
+          <img src="images/puppy-running.jpg" alt="Puppy" style="width:100%;height:130px;object-fit:cover;border-radius:10px">
+        </div>
+      </div>
+
+      <div class="news-entry" style="display:grid;grid-template-columns:120px 1fr;gap:24px" data-category="shows">
+        <div style="font-size:13px;font-weight:800;color:#A08A54;padding-top:26px;text-align:right">30 MAY 2026</div>
+        <div class="news-card-with-img" style="background:#FFFEF9;border:1px solid #E5DCC6;border-radius:14px;padding:22px 26px;display:grid;grid-template-columns:1fr 180px;gap:22px;align-items:center">
+          <div>
+            <span class="tag tag--shows">SHOWS</span>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:#3F4A2E;margin-top:10px">Bagheera is International Champion!</div>
+            <div style="font-size:14.5px;line-height:1.65;color:#6B6A55;margin-top:6px">Mufuni House Chihov Bagheera completed her International Champion title. So proud of our girl.</div>
+          </div>
+          <img src="images/bagheera-show.jpg" alt="Bagheera in the ring" style="width:100%;height:130px;object-fit:cover;border-radius:10px">
+        </div>
+      </div>
+
+      <div class="news-entry" style="display:grid;grid-template-columns:120px 1fr;gap:24px" data-category="shows">
+        <div style="font-size:13px;font-weight:800;color:#A08A54;padding-top:26px;text-align:right">18 APR 2026</div>
+        <div style="background:#FFFEF9;border:1px solid #E5DCC6;border-radius:14px;padding:22px 26px">
+          <span class="tag tag--shows">SHOWS</span>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:#3F4A2E;margin-top:10px">Spring show season results</div>
+          <div style="font-size:14.5px;line-height:1.65;color:#6B6A55;margin-top:6px">A summary of results from the spring shows goes here — placements, judges' comments and photos.</div>
+        </div>
+      </div>
+
+      <div class="news-entry" style="display:grid;grid-template-columns:120px 1fr;gap:24px" data-category="new-dogs">
+        <div style="font-size:13px;font-weight:800;color:#A08A54;padding-top:26px;text-align:right">02 MAR 2026</div>
+        <div style="background:#FFFEF9;border:1px solid #E5DCC6;border-radius:14px;padding:22px 26px">
+          <span class="tag tag--new-dogs">NEW DOGS</span>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:700;color:#3F4A2E;margin-top:10px">A new family member</div>
+          <div style="font-size:14.5px;line-height:1.65;color:#6B6A55;margin-top:6px">Introduce a new dog joining the kennel here — where they came from and what you hope for their future.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer footer--compact">
+    <div class="footer__inner">
+      <span>Mufuni House Chihov · FCI Chihuahua Kennel · est. 2001</span>
+      <span class="footer__right">email@placeholder.com · +XX (XXX) XXX-XX-XX · City, Country</span>
+    </div>
+  </footer>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
